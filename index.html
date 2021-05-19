@@ -17,11 +17,13 @@
 			}
 	</style>"
   <script>
-			alert("Hello World!");
-	  play = confirm ("Do you want to play?");
-	  if (play == true){
-	  name = prompt ("What's your name?", Harry Potter"); 
-			 alert("Hello "+name+" ! ") 
+			function beginGame(){
+			play = confirm("Do you want to play?");
+			if(play == true){
+				name = prompt("What's your name?", "Neo");
+document.getElementById("log").innerHTML =
+document.getElementById("log").innerHTML+name+"<br>";
+			}
 	  }
 		</script>
 </head>
